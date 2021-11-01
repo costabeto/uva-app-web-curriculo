@@ -1,0 +1,150 @@
+body,
+html {
+  width: 100vw;
+  margin: 0px;
+  padding: 0px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  background: url('./img/pattern.jpg');
+
+  color: #ededed;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a,
+a:active,
+a:visited {
+  color: #ededed;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: blue;
+}
+
+header {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  padding: 16px;
+
+  border-bottom: 1px solid #ededed;
+}
+
+header > nav {
+  width: fit-content;
+  font-size: 1.6rem;
+}
+
+header > nav > a {
+  text-decoration: none;
+
+  margin: 0px 8px;
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  padding: 16px;
+}
+
+.profile {
+  border-radius: 50%;
+  width: 200px;
+}
+
+main > p {
+  font-size: 1.3rem;
+  padding: 4px;
+
+  font-weight: 300;
+}
+
+.lista-curriculo {
+  list-style: none;
+}
+
+.lista-curriculo > li + li {
+  border-top: 1px solid #ededed;
+  margin-top: 16px;
+  padding-top: 16px;
+}
+.lista-curriculo > li > p {
+  width: fit-content;
+  max-width: 400px;
+}
+
+.lista-curriculo > li > h4 {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.lista-curriculo > li > h4 > img {
+  border-radius: 50%;
+  width: 50px;
+  margin-right: 16px;
+}
+
+.lista-contato {
+  list-style: none;
+}
+
+.lista-contato > li + li {
+  border-top: 1px solid #ededed;
+  margin-top: 16px;
+  padding-top: 16px;
+}
+.lista-contato > li > p {
+  width: fit-content;
+  max-width: 400px;
+}
+
+footer {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding: 16px;
+
+  border-top: 1px solid #ededed;
+}
+
+footer > a {
+  font-size: 1.5rem;
+  margin-left: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  header,
+  main,
+  footer {
+    width: 80%;
+  }
+}
